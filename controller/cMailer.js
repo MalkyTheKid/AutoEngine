@@ -9,7 +9,7 @@ try{
 	  service: 'gmail',
 	  auth: {
 		user: 'auto.JESS.automation01@gmail.com',
-		pass: 'accessje1'
+		pass: ''
 	  }
 	});
 	
