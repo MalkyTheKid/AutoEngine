@@ -24,8 +24,17 @@ merges
 # plugins
 
 
+# exclude everything
+ScrnShots/*
+previousRuns/*
+
+# but add these folders anyway (make sure they have the .gitkeep file)
+!ScrnShots/.gitkeep
+!previousRuns/.gitkeep
+
 #this will make sure gitignore is included
 !.gitignore 
+
 
 
 tmp/**
