@@ -1,0 +1,61 @@
+#all files mentioned in this file will not be commited to our repository if we try to push
+builds/
+platforms/
+node_modules/
+plugins/
+npm-debug.log
+
+.vscode/
+
+
+# rad examples
+www/libs/rad
+
+# develop stuff
+www/build/
+
+/google-services.json
+/GoogleService-Info.plist
+/build.json
+/package-lock.json
+
+# hooks
+merges
+# plugins
+
+
+#this will make sure gitignore is included
+!.gitignore 
+
+
+tmp/**
+tmp/**/*
+
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+
+Thumbs.db
+
+
+Desktop.ini
+
+
+ant-build/
+ant-gen/
+
+
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.xcuserstate
+project.xcworkspace/
+xcuserdata/
+*.o
+*.pyc
+
+
+

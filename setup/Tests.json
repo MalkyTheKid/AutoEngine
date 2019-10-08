@@ -1,0 +1,104 @@
+[
+	{
+		"Cases" : [	
+			{
+				"QAInvolved" : "Malc Salvador",	
+				"caseName" : "Wikitest SpecificTest project",
+				"baseUrl" : "https://www.wikipedia.org",
+				"testIn" : "chrome",
+                "delay" : 1000,
+				"browserSpec": 100,
+				"waitUntil": 20000,
+                "steps" : [
+                    {
+						"stepName": "action 1 Type search parameter on textbox",
+						"event":"type",
+						"identifier":"//*[@id='searchInput']",
+						"write": "Iron Man",
+						"delay": 3000
+                    },
+                    {
+						"stepName": "action 2 Click on Search",
+						"event":"click",
+						"identifier":"//*[@id='search-form']/fieldset/button",
+						"delay": 3000
+					}
+					
+                ]
+                
+			},
+			{
+				"QAInvolved" : "Malc Salvador",	
+				"caseName" : "Google testing",
+				"baseUrl" : "https://www.google.com",
+				"testIn" : "chrome",
+                "delay" : 1000,
+				"browserSpec": 100,
+				"waitUntil": 20000,
+                "steps" : [
+                    {
+						"stepName": "action - Type search parameter on textbox",
+						"event":"type",
+						"identifier":"//*[@name='q']",
+						"write": "Iron Man",
+						"delay": 3000
+					},
+					{
+						"stepName": "action - click somewhere else to avoid blocking",
+						"event":"click",
+						"identifier":"//*[@id='hplogo']",	
+						"delay": 3000
+                    },
+                    {
+						"stepName": "action - Click on Search",
+						"event":"click",
+						"identifier":"//*[@id='tsf']/div[2]/div/div[3]/center/input[1]",
+						"delay": 2000
+					},					
+					{
+						"stepName": "action - screenshot (simply takes a screenshot, for example after waiting for a document to load)",
+						"event":"screenshot",
+						"delay": 4000
+					},
+					{
+						"stepName": "action - browse to dropdown example",
+						"event":"browse",
+						"url":"http://www.echoecho.com/htmlforms11.htm",
+						"delay": 3000
+					},
+					{
+						"stepName": "action - wait (in this example, for 3 seconds)",
+						"event":"wait",						
+						"delay": 3000
+					},					
+					{
+						"stepName": "action - dropdown example",
+						"event":"dropdown",
+						"identifier":"//*[@name='mydropdown']", 
+						"option": "Fresh Milk", 
+						"delay": 3000
+					},
+					{
+						"stepName": "action - newTab (opens a new tab and browses there)",
+						"event":"newTab",
+						"url":"http://www.echoecho.com/htmlforms11.htm",
+						"delay": 3000
+					},
+					{
+						"stepName": "action - switchTab (switches tabs. Remember to start from 0)",
+						"event":"switchTab",
+						"tabNumber":0,
+						"delay": 3000
+					},
+					{
+						"stepName": "action - initiateTagTest",
+						"event":"initializeTagTesting"
+					}
+					
+					
+                ]
+                
+			}
+		]
+	}	
+]

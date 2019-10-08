@@ -1,0 +1,32 @@
+[
+	{
+		"Cases" : [				
+			{
+				"QAInvolved" : "Malc Salvador",	
+				"caseName" : "Google testing",
+				"baseUrl" : "https://www.justenergy.com/",
+				"testIn" : "chrome",
+                "delay" : 1000,
+				"browserSpec": 100,
+				"waitUntil": 20000,
+                "steps" : [	
+							{
+								"stepName": "action 1 Type zipcode textbox",
+								"event":"type",
+								"identifier":"//*[@id='PostalCode']",
+								"write": "T1Y2K6",
+								"delay": 3000
+							},
+							{
+								"stepName": "action 2 Click on Search",
+								"event":"click",
+								"identifier":"//*[@id='Body']/app-root/app-home/div/form/div/div/p/label/button",
+								"delay": 3000
+							}
+                ]
+                
+			}
+			
+		]
+	}	
+]

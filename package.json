@@ -1,0 +1,26 @@
+{
+  "name": "rpm_AutoEngine",
+  "version": "1.0.0",
+  "description": "This is Just Energy's main Automation Engine",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Malcolm Joseph Salvador, Richard Winkler, Peter Dorney",
+  "license": "ISC",
+  "dependencies": {
+    "chromedriver": "^75.0.1",
+    "csvtojson": "^2.0.10",
+    "express": "^4.17.1",
+    "geckodriver": "^1.16.2",
+    "node-datetime": "^2.1.2",
+    "nodemailer": "^6.2.1",
+    "npm": "^6.9.2",
+    "package.json": "^2.0.1",
+    "replace": "^1.1.0",
+    "selenium-webdriver": "^4.0.0-alpha.1",
+    "webdriverio": "^5.10.9",
+    "website-scraper": "^4.0.1"
+  }
+}
