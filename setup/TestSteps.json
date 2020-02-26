@@ -13,14 +13,33 @@
 							{
 								"stepName": "action 1 Type zipcode textbox",
 								"event":"type",
-								"identifier":"//*[@id='PostalCode']",
+								"identifier":"//*[@id='zip']",
 								"write": "T1Y2K6",
 								"delay": 3000
 							},
 							{
-								"stepName": "action 2 Click on Search",
+								"stepName": "action 2 'See Plans' ",
 								"event":"click",
-								"identifier":"//*[@id='Body']/app-root/app-home/div/form/div/div/p/label/button",
+								"identifier":"//*[@id='gatsby-focus-wrapper']/section/div[1]/form/div/button",
+								"delay": 3000
+							},
+							{
+								"stepName": "action 3 electricity utility FortMacLeod",
+								"event":"dropdown",
+								"identifier":"//*[@id='utilitySelector']", 
+								"option": "FortMacLeod", 
+								"delay": 3000
+							},
+							{
+								"stepName": "action 2 'See Plans' ",
+								"event":"click",
+								"identifier":"//*[@id='utility-selector-next-button']",
+								"delay": 3000
+							},
+							{
+								"stepName": "action 2 'See Plans' ",
+								"event":"click",
+								"identifier":"//*[@id='gatsby-focus-wrapper']/main/section/div/app-root/app-product-selection/section[2]/app-has-products/app-has-products-single-commodity/div/app-product-cards/div/div[1]/div/div[2]/div/div/div[6]/button",
 								"delay": 3000
 							}
                 ]
